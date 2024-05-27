@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>FAQs</title>
+    <link rel="stylesheet" href="faqs.css">
+    <link rel="icon" type="image/x-icon" href="photos/logo.jpg">
+    <link rel="icon" type="image/jpg" sizes="32x32" href="photos/logo.jpg">
+    <link rel="icon" type="image/jpg" sizes="16x16" href="photos/logo.jpg">
+
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo"><a href="" target="_blank"><img src="photos/logo.jpg" width="50" height="61"></a></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="main.html">Chat</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="faq.html">FAQs</a></li>
+                    <li><a href="news.html">News</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    
+    <div style="text-align:center">
+        <div class="about-me">
+        <h2>Frequently asked Questions</h2>
+        </div>
+        <button class="accordion">What is a solar eclipse?</button>
+        <div class="panel">
+        <p>A solar eclipse occurs when the Moon passes between the Sun and Earth, blocking the Sun's light.</p>
+        </div>
+
+        <button class="accordion">Section 2</button>
+        <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+        <button class="accordion">Section 3</button>
+        <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+    </div>
+    <footer>
+        <p>Author: Eshparsi Gupta, Pankhuri Thakur, Soumya Dubey<br>
+        <a href="astrochat">AstroChat</a></p>
+    </footer>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            } 
+          });
+        }
+    </script>
+
+</body>
+</html> 
